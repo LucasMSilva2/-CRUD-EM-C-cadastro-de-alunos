@@ -15,7 +15,7 @@ Este programa é um CRUD muito simples, no qual um menu com as seguintes opçõe
 
 O struct do Aluno, contêm: nome, matricula e média.
 
-![](C:\Users\Lucas Torres\AppData\Roaming\Typora\typora-user-images\image-20220913204613547.png)
+<img src="/img/image-20220913204613547" alt=""/>
 
 ------
 
