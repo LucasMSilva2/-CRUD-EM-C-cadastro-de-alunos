@@ -15,4 +15,14 @@ Este programa é um CRUD simples para cadastro de alunos, no qual contem um menu
 
 O struct do Aluno, contêm: **nome, matricula e média.**
 
+<<<<<<< HEAD
 <img src="/img/image-20220913204613547" alt=""/>
+=======
+<img src="/img/image-20220913204613547.png" alt=""/>
+
+------
+
+### Nota:
+
+*O código contêm um bug na função excluir.*
+>>>>>>> d720312df9ba30e87ea31ca8d77f770d34947319
