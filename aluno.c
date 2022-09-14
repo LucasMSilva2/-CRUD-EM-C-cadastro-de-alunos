@@ -186,22 +186,23 @@ void excluirAluno(Aluno antigo) {
   arquivoAluno = fopen("./ex.dat", "rb");
   aux = fopen("./exAux.dat", "wb");
 
-  while(fread(&passar,sizeof(Aluno),1,arquivoAluno)){
+  fread(&passar,sizeof(Aluno),1,arquivoAluno);
     if(antigo.matricula!=passar.matricula){
       fwrite(&passar,sizeof(Aluno),1,aux);
     }
-  }
+  
   fclose(arquivoAluno);
   fclose(aux);
 
   arquivoAluno = fopen("./ex.dat", "wb");
   aux = fopen("./exAux.dat", "rb");
-  while(fread(&passar,sizeof(Aluno),1,arquivoAluno)){
-    fwrite(&passar,sizeof(Aluno),1,arquivoAluno);
-  }
+  fread(&passar,sizeof(Aluno),1,aux);
+  fwrite(&passar,sizeof(Aluno),1,arquivoAluno);
+
 
   fclose(arquivoAluno);
   fclose(aux);
+  remove("./exAux.dat");
 
   printf("Dados apagados com sucesso!");
   getch();
